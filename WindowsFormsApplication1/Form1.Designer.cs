@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.SuspendLayout();
             // 
             // button1
@@ -80,11 +81,19 @@
             this.listBox1.TabIndex = 4;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(50, 207);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 5;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
@@ -104,6 +113,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
 
